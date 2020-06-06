@@ -23,17 +23,16 @@ import { LoginComponent } from './login/login.component';
       LoginComponent
    ],
    imports: [
-      BrowserModule.withServerTransition(appId
-   ]
-}),
-    HttpClientModule,
-    FormsModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
-    ])
-  ],
+      //BrowserModule.withServerTransition(appId),
+      HttpClientModule,
+      FormsModule,
+      RouterModule.forRoot([
+         // { path: '', component: HomeComponent, pathMatch: 'full' },
+          { path: '', component: LoginComponent, pathMatch: 'full' },
+         { path: 'counter', component: CounterComponent },
+         { path: 'fetch-data', component: FetchDataComponent },
+       ])
+   ],
   providers: [],
   bootstrap: [AppComponent]
 })
